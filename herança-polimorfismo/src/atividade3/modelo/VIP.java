@@ -1,31 +1,16 @@
 package atividade3.modelo;
 
+//VIP é um ingresso
 public class VIP extends Ingresso{
 
-    private double ingressoVip;
     private double valorAdicional = 50;
 
+    //contrutor do vip
     public VIP(double valor) {
         super(valor);
+        //diz que é um ingresso VIP
         System.out.println("Ingresso VIP");
+        //acrescenta um valor no ingresso por ser mais caro
         super.setValor(super.getValor() + valorAdicional);
-    }
-
-    @Override
-    public void imprimeValor() {
-        System.out.println("Novo valor do ingresso: " + IngressoVip());
-    }
-
-    public double IngressoVip(){
-        this.ingressoVip = super.getValor();
-        return ingressoVip;
-    }
-
-    public double getIngressoVip() {
-        return ingressoVip;
-    }
-
-    public void setIngressoVip(double ingressoVip) {
-        this.ingressoVip = ingressoVip;
     }
 }

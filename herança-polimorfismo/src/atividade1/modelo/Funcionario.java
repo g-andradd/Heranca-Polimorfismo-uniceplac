@@ -6,28 +6,23 @@ public abstract class Funcionario {
     private String cpf;
     private double salario;
 
+    //contrutor
     Funcionario(String nome, String cpf, double salario){
         this.nome = nome;
         this.cpf = cpf;
         this.salario = salario;
     }
 
+    //metodo abstrato para exibir os dados
     public abstract String exibeDados();
 
+    //métodos get e set
     public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public String getCpf() {
         return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
     }
 
     public double getSalario() {

@@ -5,8 +5,10 @@ public abstract class Animal {
     private String nome;
     private String raca;
 
+    //contrutor vazio
     public Animal(){}
 
+    //contrutor passando o nome do animal
     public Animal(String nome){
         this.nome = nome;
     }
