@@ -2,19 +2,27 @@ package atividade4.modelo;
 
 public class Novo extends Imovel{
 
-    private double adicional;
+    private double precoNovo;
+    private static double adicional = 50000;
 
-    public Novo(String endereco, double preco, double adicional) {
+    public Novo(String endereco, double preco) {
         super(endereco, preco);
-        this.adicional = adicional;
-        super.setPreco(preco + adicional);
+        this.precoNovo = super.getPreco() + Novo.adicional;
+    }
+
+    public double getPrecoNovo() {
+        return precoNovo;
+    }
+
+    public void setPrecoNovo(double precoNovo) {
+        this.precoNovo = precoNovo;
     }
 
     public double getAdicional() {
-        return this.adicional;
+        return Novo.adicional;
     }
 
     public void setAdicional(double adicional) {
-        this.adicional = adicional;
+        Novo.adicional = adicional;
     }
 }
